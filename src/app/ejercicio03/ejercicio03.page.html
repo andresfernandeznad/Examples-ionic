@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ejercicio03</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button shape="round" href="/home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3">
+          <ion-button shape="round" size="large" expand="full" (click)="decrementar()">-</ion-button>
+      </ion-col>
+
+      <ion-col size="6"></ion-col>
+
+      <ion-col size="3">
+          <ion-button shape="round" size="large" expand="full" (click)="incrementar()">+</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h1 text-center>{{ num }}</h1>
+
+  <ion-button shape="round" size="large" expand="full" (click)="reset()">Reset</ion-button>
+</ion-content>
